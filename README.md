@@ -8,5 +8,5 @@ https://www.who.int/violence_injury_prevention/violence/activities/adverse_child
 2) The Adult Temperament Questionnaire (ATQ) - Short Form
 Evans, D.E., & Rothbart, M.K. (2007). Development of a model for adult temperament. Journal of Research in Personality, 41, 868-888.
 
-3)Stop-Signal Task: 
+3) Stop-Signal Task: 
 Logan, Gordon D. "On the ability to inhibit thought and action: A users' guide to the stop signal paradigm." (1994).
