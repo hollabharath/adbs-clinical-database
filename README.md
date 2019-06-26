@@ -10,3 +10,5 @@ Evans, D.E., & Rothbart, M.K. (2007). Development of a model for adult temperame
 
 3) Stop-Signal Task: 
 Logan, Gordon D. "On the ability to inhibit thought and action: A users' guide to the stop signal paradigm." (1994).
+
+4) Severity of Alcohol Dependence Questionaire (SADQ)
