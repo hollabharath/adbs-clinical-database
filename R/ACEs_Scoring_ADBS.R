@@ -36,7 +36,7 @@ ace[] <- lapply(ace, function(x) as.numeric(as.character(x)))
 
                 
 # Check for subjects with more than 20% missing data/non response for exclusion 
-ace_excluded <- <- ace[rowSums(is.na(ace)) > ncol(ace)/5 , ]
+ace_excluded <- ace[rowSums(is.na(ace)) > ncol(ace)/5 , ]
 
 # Also check for subjects with incorrect subject/visit ID
 ace_duplicates <- ace[nchar(ace$assessmentId) !=9 | 
@@ -59,9 +59,9 @@ VIM::aggr(ace)
 
 # ACE sub-domain scores
 
-ace$AP <- ace$A3+ace$A4
-ace$AE <- ace$A1+ace$A2
-ace$AS <- ace$A5+ace$A6+ace$A7+ace$A8
+ace$AP  <- ace$A3+ace$A4
+ace$AE  <- ace$A1+ace$A2
+ace$AS  <- ace$A5+ace$A6+ace$A7+ace$A8
 ace$FAD <- ace$F1
 ace$FI  <- ace$F3
 ace$FM  <- ace$F2
@@ -109,7 +109,7 @@ ace$ColV_F<- ifelse(ace$V7>0 | ace$V8>0 | ace$V9>0 | ace$V10>0, 1, 0)
 
 
 # Summate Binary and Frequency Scores
-ace$Binary.Score   <- rowSums(ace[, c("AP_B" , "AE_B" , "AS_B" , "FAD_B" , "FI_B" , 
+ace$Binary.Score    <- rowSums(ace[, c("AP_B" , "AE_B" , "AS_B" , "FAD_B" , "FI_B" , 
                                     "FM_B" , "FV_B" , "FP_B" , "NE_B" , "NP_B" , 
                                     "BUL_B" , "ComV_B" , "ColV_B")], na.rm=TRUE)
 
