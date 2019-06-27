@@ -33,13 +33,28 @@ ace  <- cbind(ID, ace1, ace2)
 # Get the data.frame ready for numeric operations
 ace[] <- lapply(ace, function(x) as.numeric(as.character(x)))
 
-# Check for missing and duplicate data for exclusion
-ace_excluded <- ace[rowSums(is.na(ace)) > ncol(ace)/5 , ]
-ace_duplicates <- ace[nchar(df$assessmentId) !=9, ]
-ace <- ace[rowSums(is.na(ace)) < ncol(ace)/5 & nchar(df$assessmentId) ==9, ]
-dim(ace_excluded)
-dim(ace_duplicates)
-dim(ace)
+
+                
+# Check for subjects with more than 20% missing data/non response for exclusion 
+ace_excluded <- <- ace[rowSums(is.na(ace)) > ncol(ace)/5 , ]
+
+# Also check for subjects with incorrect subject/visit ID
+ace_duplicates <- ace[nchar(ace$assessmentId) !=9 | 
+                      ace$subjectID >200000 | 
+                      duplicated(ace$assessmentId, fromLast = T), ]
+
+# Make a clean data frame after removing the rows from above two groups
+ace <- ace[rowSums(is.na(ace)) < ncol(ace)/5  & 
+           nchar(ace$assessmentId) ==9 & 
+           ace$subjectID <200000 & 
+           !duplicated(ace$assessmentId, fromLast = T), ]
+
+paste("ACE-IQ")
+paste("Number of subjects with >20% missing data:", nrow(ace_excluded))
+paste("Number of subjects with incorrect subject/visit ID:", nrow(ace_duplicates))
+paste("Number of subjects with usable data:", nrow(df))
+
+# Visualize missing data
 VIM::aggr(ace)
 
 # ACE sub-domain scores
