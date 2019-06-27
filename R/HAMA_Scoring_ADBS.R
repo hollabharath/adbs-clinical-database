@@ -1,10 +1,18 @@
 df <- read.csv("/Users/hollabharath/Documents/Projects/ADBS/DATA_QC/Scripts/hamiltonanxietyratingscale_table.csv", header = T)
 
 # Check for subjects with more than 25% missing data/non response for exclusion 
-# Also exclude subjects with incorrect visit ID
 df_excluded <- df[rowSums(is.na(df)) > (ncol(df)-6)/4 , ]
-df_duplicates <- df[nchar(df$assessmentId) !=9 | df$subjectID >200000, ]
-df <- df[rowSums(is.na(df)) < (ncol(df)-6)/4 & nchar(df$assessmentId) ==9 & df$subjectID <200000, ]
+
+# Also check for subjects with incorrect subject/visit ID
+df_duplicates <- df[nchar(df$assessmentId) !=9 | 
+                    df$subjectID >200000 | 
+                    duplicated(df$assessmentId, fromLast = T), ]
+
+# Make a clean data frame after removing the rows from above two groups
+df <- df[rowSums(is.na(df)) < (ncol(df)-6)/4 & 
+         nchar(df$assessmentId) ==9 & 
+         df$subjectID <200000 & 
+         !duplicated(df$assessmentId, fromLast = T), ]
 
 paste("HAMA")
 paste("Number of subjects with >25% missing data:", nrow(df_excluded))
