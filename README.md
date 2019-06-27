@@ -39,8 +39,8 @@ https://www.who.int/substance_abuse/activities/assist/en/
 - [x] Hamilton Depression Rating Scale (HDRS)
 
 _Disorder-Specific Interview:_
-- [ ] Scale for the Assessment of Positive Symptoms (SAPS)
-- [ ] Scale for the Assessment of Negative Symptoms (SANS)
+- [x] Scale for the Assessment of Positive Symptoms (SAPS)
+- [x] Scale for the Assessment of Negative Symptoms (SANS)
 - [ ] Yale–Brown Obsessive Compulsive Scale (Y-BOCS)
 - [ ] Clinical Dementia Rating (CDR)
 - [x] Severity of Alcohol Dependence Questionaire (SADQ)
