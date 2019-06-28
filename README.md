@@ -18,7 +18,7 @@ R scripts to process adbs clinical datasets exported as CSV files from the ADBS 
 - [ ] MINI international neuropsychiatric inventory version 5 (MINI5)
 - [ ] Adult ADHD self-report scale version 1.1 (ASRS)
 - [ ] Hindi Mental Status Examination (HMSE)
-- [ ] Clinical Global Impression - Severity (CGI–S)
+- [x] Clinical Global Impression Scale(CGI)
 
 **Level 2 (Deep Phenotyping)**
 
