@@ -23,8 +23,8 @@ R scripts to process adbs clinical datasets exported as CSV files from the ADBS 
 **Level 2 (Deep Phenotyping)**
 
 _General Interview:_
-- [ ] Modified Kuppuswamy Classification Of Socioeconomic Status (SES)
-- [ ] Edinburgh Handedness Inventory (EHI)
+- [x] Modified Kuppuswamy Classification Of Socioeconomic Status (SES)
+- [x] Edinburgh Handedness Inventory (EHI)
 - [ ] Work And Social Adjustment Scale (WSAS)
 - [ ] Global Assessment of Functioning (GAF)
 - [ ] Interview For Recent Life Events (IRLE)
