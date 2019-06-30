@@ -25,8 +25,8 @@ R scripts to process adbs clinical datasets exported as CSV files from the ADBS 
 _General Interview:_
 - [x] Modified Kuppuswamy Classification Of Socioeconomic Status (SES)
 - [x] Edinburgh Handedness Inventory (EHI)
-- [ ] Work And Social Adjustment Scale (WSAS)
-- [ ] Global Assessment of Functioning (GAF)
+- [x] Work And Social Adjustment Scale (WSAS)
+- [x] Global Assessment of Functioning (GAF)
 - [ ] Interview For Recent Life Events (IRLE)
 - [x] Adverse Childhood Experiences International Questionnaire (ACE-IQ) 
 https://www.who.int/violence_injury_prevention/violence/activities/adverse_childhood_experiences/en/
