@@ -8,8 +8,8 @@ R scripts to process adbs clinical datasets exported as CSV files from the ADBS 
 - [ ] Physical examination, minor physical anomaly
 - [ ] Treatment and side effects
 - [x] Addiction - Lifetime History (HOPI_SUD)
-- [ ] Bipolar Disorder - Lifetime History (HOPI_BPAD)
-- [ ] Schizophrenia - Lifetime History (HOPI_SCZ)
+- [x] Bipolar Disorder - Lifetime History (HOPI_BPAD)
+- [x] Schizophrenia - Lifetime History (HOPI_SCZ)
 - [ ] Obsessive-Compulsive Disorder - Lifetime History (HOPI_OCD)
 - [ ] Dementia - Lifetime History (HOPI_DEM)
 - [ ] DSM 5 cross cutting diagnosis - adult (DSM5CC_Adult)
