@@ -27,7 +27,7 @@ _General Interview:_
 - [x] Edinburgh Handedness Inventory (EHI)
 - [x] Work And Social Adjustment Scale (WSAS)
 - [x] Global Assessment of Functioning (GAF)
-- [ ] Interview For Recent Life Events (IRLE)
+- [x] Interview For Recent Life Events (IRLE)
 - [x] Adverse Childhood Experiences International Questionnaire (ACE-IQ) 
 https://www.who.int/violence_injury_prevention/violence/activities/adverse_childhood_experiences/en/
 - [x] The Adult Temperament Questionnaire (ATQ) - Short Form: 
